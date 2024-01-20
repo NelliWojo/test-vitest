@@ -1,3 +1,8 @@
+#### Note
+
+deleted file sum.test.ts
+(no need when inline testing)
+
 import sum from "./sum";
 import { describe, expect, it } from "vitest";
 
@@ -14,3 +19,4 @@ describe("#sum", () => {
     expect(sum(1, 2, 3)).toBe(6);
   });
 });
+

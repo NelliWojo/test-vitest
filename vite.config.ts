@@ -1,9 +1,10 @@
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
+  define: { "import.meta.vitest": "undefined" },
   test: {
+    includeSource: ["src/**/*.+(js|ts)"],
     coverage: {
-      provider: "v8",
       reporter: ["text", "html"],
       // json also possible
     },
